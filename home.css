@@ -1,0 +1,149 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body::-webkit-scrollbar{
+    width: 0px;
+}
+
+body{
+    cursor: pointer;
+}
+
+h1{
+    color: white;
+}
+
+h3{
+    height: 100px;
+    width: 90%;
+    margin: 10px 20px 10px 20px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+h3:hover{
+    transform: scale(1.01);
+}
+
+h2{
+    text-align: center;
+    font-weight: 900;
+    color: white;
+    margin: 20px;
+}
+
+p{
+    padding: 5px;
+    margin: 5px;
+    background-color: rgba(0, 0, 0, 0.984);
+    color: white;
+    border-radius: 5px;
+}
+
+.header{
+    height: 20vh;
+    width: 100vw;
+    padding: 50px;
+    margin-bottom: 10px;
+
+    background-color: rgba(0, 0, 222, 0.87);
+    border-bottom: 10px solid rgb(255, 187, 0);
+    scroll-snap-align: start;
+    
+}
+
+.all-container{
+    margin: 0px;
+    height: 100vh;
+    overflow: auto;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+}
+
+.all-container::-webkit-scrollbar{
+    width: 5px;
+}
+.all-container::-webkit-scrollbar-thumb{
+    background-color: red;
+    border-radius: 50px;
+}
+
+.info{
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: start;
+    background-color: white;
+}
+
+.discription{
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.discription p{
+    background-color: transparent;
+    color: black;
+    font-size: 20px;
+}
+
+.container{
+    margin: 10px;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+.box{
+    height: 98vh;
+    width: 30vw;
+    overflow: auto;
+    border-right: 10px solid rgb(255, 187, 0);
+    background-color:rgba(0, 0, 222, 0.87);
+}
+
+.box::-webkit-scrollbar{
+    width: 5px;
+}
+.box::-webkit-scrollbar-thumb{
+    background-color: red;
+    border-radius: 20px;
+}
+
+.details{
+    height: 98vh;
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 10px solid rgb(255, 187, 0);
+    border-right: 10px solid rgb(255, 187, 0);
+    border-bottom: 10px solid rgb(255, 187, 0);
+}
+
+.details ul li{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.footer{
+    height: 30vh;
+    width: 100vw;
+    background-color: rgb(34, 34, 34);
+}
